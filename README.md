@@ -15,18 +15,20 @@ This build of these two repositories:
 
 ## Installation
 
-Clone this repository on your local computer and switch to branch `7.4.x`. Run the `docker-compose up -d`.
+Clone this repository on your local computer. Run the `docker-compose up -d`.
 
 ```shell
 git clone https://github.com/dealenx/docker-lamp-wordpress-workflow.git
 cd docker-lamp-wordpress-workflow/
 cp sample.env .env
+cp env.docker.php env.php
+composer install
 docker-compose up -d
 ```
 
 Your LAMP stack is now ready!! You can access it via `http://localhost`.
 
-## Setup WordPress
+## Setup WordPress without Docker
 
 All following commands assume you have cd'ed into the project directory.
 
@@ -34,8 +36,7 @@ Prepare WordPress:
 
 1. `$ composer install`
 2. `$ cp env.example.php env.php`
-3. Edit `.env` in your editor of choice and setup your preferences. You don't have to setup the database details as they are already injected by Docker. However, on environments that do not provide these credentials you will have to set them.
-4. Setup WordPress by visiting wp-admin (cms/wp-admin/) in your browser.
+3. Setup WordPress by visiting wp-admin (cms/wp-admin/) in your browser.
 
 Once you switch to another server, make sure to correctly adapt the `env.php` file.
 

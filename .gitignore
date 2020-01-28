@@ -1,10 +1,8 @@
 /.env
 /.vscode
-/config/*
-/data/*
-/logs/*
-/www/**
-.DS_Store
+/docker/config/*
+/docker/data/*
+/docker/logs/*
 
 .DS_Store
 composer.lock
