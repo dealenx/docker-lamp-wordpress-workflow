@@ -7,6 +7,7 @@ This is a basic LAMP stack environment built using Docker Compose. It consists f
 - MySQL 5.7 and MySQL 8 or MariaDB 10.3
 - phpMyAdmin
 - Redis
+- MailHog
 
 This build of these two repositories:
 
@@ -138,3 +139,8 @@ password: tiger
 ## Redis
 
 It comes with Redis. It runs on default port `6379`.
+
+## MailHog
+
+- the SMTP server starts on port `1025`
+- the HTTP server starts on port `8025`
