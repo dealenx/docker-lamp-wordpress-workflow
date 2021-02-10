@@ -14,6 +14,14 @@ This build of these two repositories:
 - https://github.com/georgknabl/pos-wordpress-workflow
 - https://github.com/sprintcube/docker-compose-lamp
 
+## Prerequisites
+
+You must have the following software installed and available:
+* Docker
+* Composer
+* My other pos-docker-proxy repository checked out and running
+
+
 ## Installation
 
 Clone this repository on your local computer. Run the `docker-compose up -d`.
