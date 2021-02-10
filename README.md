@@ -1,4 +1,4 @@
-# LAMP stack built with Docker Compose
+# LAMP stack for setup Wordpress
 
 This is a basic LAMP stack environment built using Docker Compose. It consists following:
 
