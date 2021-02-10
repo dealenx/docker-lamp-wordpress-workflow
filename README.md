@@ -19,7 +19,6 @@ This build of these two repositories:
 You must have the following software installed and available:
 * Docker
 * Composer
-* My other pos-docker-proxy repository checked out and running
 
 
 ## Installation
