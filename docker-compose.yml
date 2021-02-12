@@ -2,6 +2,7 @@ version: "3"
 
 services:
   webserver:
+    container_name: '${COMPOSE_PROJECT_NAME}-webserver'
     build:
       context: ./docker/bin/webserver
     ports:
@@ -14,7 +15,9 @@ services:
       - ${PHP_INI-./docker/config/php/php.ini}:/usr/local/etc/php/php.ini
       - ${VHOSTS_DIR-./docker/config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./docker/logs/apache2}:/var/log/apache2
+
   mysql:
+    container_name: '${COMPOSE_PROJECT_NAME}-mysql'
     build:
       context: "./docker/bin/${DATABASE}"
     ports:
@@ -27,7 +30,9 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
   phpmyadmin:
+    container_name: '${COMPOSE_PROJECT_NAME}-phpmyadmin'
     image: phpmyadmin/phpmyadmin
     links:
       - mysql
@@ -43,12 +48,15 @@ services:
       - "8080:80"
     volumes:
       - /sessions
+
   redis:
+    container_name: '${COMPOSE_PROJECT_NAME}-redis'
     image: redis:latest
     ports:
       - "${HOST_MACHINE_REDIS_PORT}:6379"
 
   mailhog:
+    container_name: '${COMPOSE_PROJECT_NAME}-mailhog'
     image: mailhog/mailhog
     ports:
       - "8025:8025"
