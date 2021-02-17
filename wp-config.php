@@ -37,11 +37,16 @@ define('WP_CONTENT_URL', WP_HOME . '/wp-content');
 // WPMU
 // define('WP_ALLOW_MULTISITE', true);
 
-// force language
-// define('WPLANG', 'de_DE');
+
 
 // default theme
 // define('WP_DEFAULT_THEME', 'theme');
+
+// force language
+// define('WPLANG', 'de_DE');
+
+// for changing of languages
+define( 'PLL_CACHE_LANGUAGES', true );
 
 // debugging
 if ($_ENV['DEBUG_MODE']) {
