@@ -30,8 +30,16 @@ git clone https://github.com/dealenx/docker-lamp-wordpress-workflow.git
 cd docker-lamp-wordpress-workflow/
 cp sample.env .env
 cp env.docker.php env.php
-composer install
+
 docker-compose up -d
+docker-compose exec webserver composer install &&  chmod 777 .
+
+cp -r ./cms/wp-content/themes/* ./wp-content/themes
+
+```
+or
+```
+./setup-docker.sh
 ```
 
 Your LAMP stack is now ready!! You can access it via `http://localhost`.
