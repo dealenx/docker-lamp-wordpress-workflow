@@ -45,9 +45,6 @@ define('WP_CONTENT_URL', WP_HOME . '/wp-content');
 // force language
 // define('WPLANG', 'de_DE');
 
-// for changing of languages
-define( 'PLL_CACHE_LANGUAGES', true );
-
 // debugging
 if ($_ENV['DEBUG_MODE']) {
     define('WP_DEBUG', true);
