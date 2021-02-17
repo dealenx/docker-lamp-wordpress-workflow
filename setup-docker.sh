@@ -5,3 +5,5 @@ docker-compose up -d
 docker-compose exec webserver composer install &&  chmod 777 .
 
 cp -r ./cms/wp-content/themes/* ./wp-content/themes
+
+sudo chmod 777 -R ./wp-content/
