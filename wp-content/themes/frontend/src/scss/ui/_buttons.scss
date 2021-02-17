@@ -1,0 +1,140 @@
+.k-button, .page-numbers {
+  width: auto;
+  padding: 16px 24px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  background: #589f37;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  cursor: pointer;
+
+  &:hover {
+    background: #99ec71;
+    color: #1f460d;
+  }
+
+  i {
+    margin: 0px 8px;
+  }
+}
+
+input.k-button {
+  outline: none;
+  line-height: 10px;
+}
+
+.k-button.orange {
+  background: #ff8a00;
+
+  &:hover {
+    background: #da882e;
+    color: #000;
+  }
+}
+
+.k-button.ghost, .page-numbers {
+  background: rgba($color: #101A42, $alpha: 0);
+  border: 1px solid #101A42;
+  color: #101A42;
+
+  &:hover {
+    background: rgba($color: #101A42, $alpha: 0.8);
+    color: #fff;
+  }
+}
+
+.k-button.bigger {
+  height: 57px;
+
+  background: #1890FF;
+  border: 1px solid #1890FF;
+  color: #ffffff;
+
+  font-size: 20px;
+  text-decoration: none;
+
+
+  font-weight: 300;
+
+  &:hover {
+    background: #0067c7;
+  }
+
+  & > span {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #6c6c6c;
+    text-decoration: none;
+  }
+}
+
+.area-for-bigger-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.k-button.link {
+  height: 24px;
+  padding: 0px;
+
+  background: rgba($color: #000000, $alpha: 0);
+  border: 1px solid rgba($color: #000000, $alpha: 0);
+  color: #ffffff;
+
+  font-size: 16px;
+  text-decoration: underline;
+
+  -webkit-text-decoration-color: #6c6c6c; /* Safari */
+  text-decoration-color: #6c6c6c;
+  text-decoration-color: rgba($color: #000000, $alpha: 0);
+
+  & > span {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #6c6c6c;
+    text-decoration: none;
+  }
+
+  transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 1;
+    }
+}
+
+.k-button.without-decoration {
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: right;
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 1;
+  }
+}

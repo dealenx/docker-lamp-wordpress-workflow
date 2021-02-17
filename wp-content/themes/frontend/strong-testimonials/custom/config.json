@@ -1,0 +1,31 @@
+{
+  "name": "MyCustom",
+  "description": "A classic style.",
+  "type": "display",
+  "order": 1,
+  "scripts": "",
+  "styles": "",
+  "force": "",
+  "options": [
+    {
+      "name": "style",
+      "label": "",
+      "type": "select",
+      "default": "full",
+      "values": [
+        {
+          "value": "full",
+          "class_name": "col-12",
+          "description": "a big blocks"
+        },
+        {
+          "value": "short",
+          "class_name": "col-12 col-md-6",
+          "description": "a short blocks"
+        }
+      ]
+    }
+
+  ],
+  "format_version": "2.0"
+}

@@ -1,0 +1,73 @@
+html {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  scroll-behavior: smooth;
+  color: #314659;
+
+  z-index: 10;
+  position: relative;
+}
+body {
+  height: auto !important;
+  position: relative;
+  z-index: 50;
+  font-family: "Montserrat" !important;
+
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+// #wpadminbar {
+//   z-index: 999 !important;
+// }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+}
+
+body.admin-bar .top-nav {
+  top: 32px;
+}
+
+body.admin-bar .top-dropdown-nav {
+  top: calc(64px + 32px + 20px);
+}
+
+body.admin-bar .top-dropdown-nav {
+  top: calc(64px + 32px + 20px);
+}
+
+body.admin-bar .top-nav {
+  top: 32px;
+}
+
+// body.admin-bar > main {
+//   margin-top: calc(64px + 32px);
+// }
+
+.xdebug-error {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed !important;
+  }
+}
+
+.wrap {
+  width: 1200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}

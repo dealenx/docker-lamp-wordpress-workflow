@@ -1,0 +1,128 @@
+#hamb {
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px;
+  padding: 0.5%;
+  margin: 10px 1%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+#hamb:focus {
+  outline: none;
+}
+
+#hamb:hover .rect {
+  background-color: #fcfc00;
+}
+
+p.copyWrite {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  color: #aaa;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+#slideDown ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*   width: 90%;
+  margin: 20px 5% 20px 5%;
+  font-size: 1.5rem;
+  font-weight: 900; */
+}
+
+#slideDown ul li {
+  position: relative;
+  float: left;
+}
+
+/***************************************
+****************************************
+**********IMPORTANT THINGS**************
+****************************************
+***************************************/
+
+/*THE NUMBERS ARE IMPORTANT FOR THIS. MAKE SURE YOUR RECTANGLES ARE 'something1', 'something2', 'something3' */
+#rect1,
+#rect2,
+#rect3 {
+  /*THIS IS JUST STYLING*/
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #0A1446;
+
+  /*THIS IS WHAT MAKES YOUR HAMBURGER RECTANGLES SLIDE INTO AN 'X'*/
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#slideDown {
+  /*AGAIN, JUST STYLING*/
+  position: relative;
+  float: left;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  // border-top: 1px solid #fff;
+
+  /*AGAIN, THIS MAKES YOUR HIDDEN NAV SLIDE INSTEAD OF APPEAR*/
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.hidden {
+  /*THIS IS WHAT CHANGES TO HIDE YOUR MENU. THIS NEEDS TO BE '0'*/
+  max-height: 0px;
+}
+
+.revealed {
+  /*AN APPROXIMATION OF YOUR NAV'S EXTENDED HEIGHT. IF THIS IS TOO HIGH, IT WILL LAG BEFORE CLOSING*/
+  max-height: 800px;
+}
+
+.showRect /*YOU CAN NAME ME. FOLLOW INSTRUCTIONS IN THE JS*/ {
+  /*DEFAULT STYLING FOR YOUR LITTLE HAMBURGER RECTANGLES*/
+  display: block;
+  margin: 2px 0 2px 0;
+}
+
+.hideRectX /*YOU CAN NAME ME. FOLLOW INSTRUCTIONS IN THE JS*/ {
+  /*THE STYLING FOR YOUR MIDDLE RECTANGLE, WHICH DISSAPEARS*/
+  display: none;
+}
+
+.topRectX /*YOU CAN NAME ME. FOLLOW INSTRUCTIONS IN THE JS*/ {
+  /*THE STYLING FOR YOUR TOP RECTANGLE*/
+  margin: 4px 0 4px 0;
+
+  /*THIS ROTATES YOUR TOP RECTANGLE INTO ITS 'X' POSITION*/
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bottomRectX /*YOU CAN NAME ME. FOLLOW INSTRUCTIONS IN THE JS*/ {
+  /*THE STYLING FOR YOUR BOTTOM RECTANGLE*/
+  margin: -8px 0 4px 0;
+
+  /*THIS ROTATES YOUR BOTTOM RECTANGLE INTO ITS 'X' POSITION*/
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

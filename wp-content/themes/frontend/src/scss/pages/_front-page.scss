@@ -1,0 +1,461 @@
+/*
+    ====================
+    TOP-NAV
+    ====================
+*/
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  width: 100%;
+  height: 84px;
+  background: #FFFFFF;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0px 3px 6px #00000029;
+
+  & > .wrap {
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.16666666666fr 1fr 0.16666666666fr;
+    grid-template-areas: "top-nav-logo top-nav-menu top-nav-contacts";
+  }
+}
+
+.top-nav-menu {
+  grid-area: top-nav-menu;
+
+  div[class^="menu-"],
+  div[class*=" menu-"] {
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0px 14px;
+        a {
+          color: #314659;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0px;
+          text-align: right;
+          text-decoration: none;
+          display: flex;
+
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.6;
+          }
+          &:active {
+            opacity: 1;
+          }
+
+          i {
+            margin: 0px 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.top-nav-logo {
+  grid-area: top-nav-logo;
+
+  a {
+
+    svg {
+      height: 31px;
+      width: 192px;
+      transition: all 0.3s ease;
+
+      path {
+        transition: all 0.3s ease;
+      }
+
+      
+
+      &:hover {
+        path {
+          // fill: #20364b !important;
+          opacity: 0.6;
+        }
+      }
+
+    }
+  }
+}
+
+.top-nav-contacts {
+  grid-area: top-nav-contacts;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-hamb {
+  grid-area: top-hamb;
+  display: none;
+}
+
+/*TOP-DROPDOWN-NAV-*/
+
+.top-dropdown-nav {
+  z-index: 104;
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: #2b2b2b;
+  align-items: center;
+  -webkit-box-shadow: 0px 11px 11px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 11px 11px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 11px 11px 0px rgba(0, 0, 0, 0.38);
+
+  & > .wrap {
+    height: auto;
+    display: flex;
+  }
+}
+
+.top-dropdown-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+
+  div[class^="menu-"],
+  div[class*=" menu-"] {
+    margin-bottom: 24px;
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 12px 0px;
+        display: flex;
+        a {
+          color: #fff;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: right;
+          text-decoration: none;
+          display: flex;
+
+          i {
+            margin: 0px 8px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* ==============
+Types of jobs
+================= */
+
+
+.types-of-jobs {
+  min-height: 600px;
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  & > .wrap {
+    display: flex;
+    z-index: 10;
+    color: #fff;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 32px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: #FAFAFA;
+      border-radius: 50px;
+      width: calc(100% + 68px + 68px + 68px);
+      top: 32px;
+      left: -68px;
+      height: 400px;
+      z-index: 1;
+    }
+
+    & > * {
+      z-index: 10;
+    }
+
+
+    
+  }
+
+  
+  
+
+  
+  h2 {
+    color: #0A1446;
+    font-size: 52px;
+    font-weight: 800;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ==============
+Work Experience
+================= */
+
+
+.work-experience {
+  min-height: 800px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  background-color: #EDF1F5;
+
+
+  & > .wrap {
+    display: flex;
+    z-index: 10;
+    color: #fff;
+    justify-content: space-between;
+
+    
+  }
+}
+
+
+
+
+
+/* ==============
+Geography Activity
+================= */
+
+
+.geography-activity {
+  min-height: 680px;
+  display: flex;
+  width: 100%;
+  position: relative;
+
+
+  & > .wrap {
+    display: flex;
+    z-index: 10;
+    color: #fff;
+    justify-content: space-between;
+  }
+
+}
+
+
+/* ==============
+FEEDBACK
+================= */
+
+.feedback {
+  // margin-top: 48px;
+  min-height: 476px;
+
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 41%, 100% 100%, 0 100%);
+    background: #0A1446;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(#16246A, #0A1446);
+    top: 0;
+    left: 0;
+  }
+
+  
+   
+
+  & > .wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 102px;
+    z-index: 10;
+    color: #fff;
+    justify-content: space-between;
+
+    
+  }
+
+  
+  &__info {
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-left: 52px;
+      h3 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .image-feedback {
+    width: 210px;
+    height: 196px;
+    background-image: url("../img/feedback.svg");
+  }
+
+}
+
+
+
+
+/* ==============
+FOOTER
+================= */
+
+.footer {
+  // margin-top: 48px;
+  min-height: 142px;
+  background: #000000;
+  display: flex;
+  width: 100%;
+
+  & > .wrap {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 52px 90px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "company-name menu-area"
+      "desc contacts";
+
+    color: #fff;
+  }
+  &__company-name { 
+    grid-area: company-name;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 12px;
+
+  }
+  &__desc { 
+    grid-area: desc;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 14px;
+  }
+  &__menu-area { 
+    grid-area: menu-area; 
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+
+    div[class^="menu-"],
+    div[class*=" menu-"] {
+
+      ul {
+        display: flex;
+
+        li {
+          display: flex;
+          margin: 0px 12px;
+
+          a {
+            color: #fff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: right;
+            text-decoration: none;
+            display: flex;
+
+            i {
+              margin: 0px 8px 0px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  &__contacts { 
+    grid-area: contacts; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      height: 28px;
+
+      li {
+        height: 28px;
+        display: flex;
+        margin: 0px 14px;
+        align-items: center;
+        justify-content: flex-start;
+
+
+
+        div {
+          display: flex;
+          flex-direction: column;
+          margin-left: 12px; 
+
+          p {
+            font-size: 10px;
+            line-height: 13px;
+          }
+
+          b {
+            margin-top: 2px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 13px;
+          }
+        }
+      }
+    }
+  }
+}

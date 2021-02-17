@@ -16,10 +16,15 @@ class ComposerStaticInita79a979e4e653a63043c3755ecbbd627
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixesPsr0 = ComposerStaticInita79a979e4e653a63043c3755ecbbd627::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInita79a979e4e653a63043c3755ecbbd627::$classMap;
 
         }, null, ClassLoader::class);
     }

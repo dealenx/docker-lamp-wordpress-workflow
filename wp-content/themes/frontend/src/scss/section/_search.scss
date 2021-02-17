@@ -1,0 +1,116 @@
+/* The overlay effect with black background */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 110;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+
+}
+
+
+
+  
+  /* The content */
+  .overlay-content {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    top: 46%;
+    width: 35%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  /* Close button */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  /* Style the search field */
+  .overlay input[type=text] {
+    padding: 18px;
+    font-size: 24px;
+    border: none;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #707070;
+    color: rgb(126, 126, 126);
+    background-color: rgba(0,0,0,0);
+    transition: all 0.3s ease;
+
+    &:focus {
+        outline: none;
+        color: rgb(233, 233, 233);
+        border-bottom: 1px solid #dadada;
+    }
+  }
+  
+  .overlay input[type=text]:hover {
+    border-bottom: 1px solid #dadada;
+    color: rgb(233, 233, 233);
+    transition: all 0.3s ease;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgb(233, 233, 233);
+        transition: all 0.3s ease;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: rgb(233, 233, 233);
+        transition: all 0.3s ease;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: rgb(233, 233, 233);
+        transition: all 0.3s ease;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: rgb(233, 233, 233);
+        transition: all 0.3s ease;
+      }
+  }
+
+  
+  /* Style the submit button */
+.overlay button {
+    float: left;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    margin-left: -48px;
+
+    & > i {
+        background-color: rgb(126, 126, 126);
+        -webkit-mask-image: url("../img/icons/search.svg");
+        mask-image: url("../img/icons/search.svg");
+        width: 21px;
+        height: 22px;
+
+    }
+
+    &:hover {
+        i {
+            background-color: #dadada;
+        }
+    }
+    &:active {
+        outline: none;
+    }
+}

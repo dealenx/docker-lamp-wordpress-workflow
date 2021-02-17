@@ -1,0 +1,38 @@
+.default-page {
+  & > .wrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__area-title {
+    grid-column: span 9;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+
+  &__preview {
+    grid-column: span 9;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .post-content-main {
+    grid-column: span 9;
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,280 @@
+/**
+ * Strong Testimonials Default Form template
+ */
+.strong-form {
+  position: relative;
+  margin: 0 auto;
+}
+.strong-form .form-field {
+  margin-bottom: 1.5em;
+}
+.strong-form .form-field.wpmtst-submit {
+  margin-bottom: 0;
+}
+.strong-form .required.symbol:after {
+  content: "*";
+  color: #ff0000;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 5px;
+  position: relative;
+  top: 5px;
+}
+.strong-form label {
+  display: inline-block;
+  float: none;
+  width: auto;
+}
+.strong-form input[type="text"],
+.strong-form input[type="email"],
+.strong-form input[type="url"],
+.strong-form input[type="file"],
+.strong-form select,
+.strong-form textarea {
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .strong-form .form-field.wpmtst-submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.strong-form input[type="checkbox"] {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  margin-left: 12px;
+  margin-right: 6px;
+}
+.strong-form input[type="checkbox"] + label {
+  font-weight: 400;
+  padding: 5px;
+}
+.strong-form input[type="checkbox"]:focus + label {
+  outline: 1px solid #ccc;
+}
+.strong-form textarea {
+  height: 16em;
+}
+.strong-form span.error,
+.strong-form label.error {
+  display: block;
+}
+.strong-form .before {
+  display: block;
+}
+.strong-form .after {
+  display: block;
+}
+
+.strong-form-inner {
+  padding: 20px;
+}
+
+input.captcha {
+  display: block;
+  width: auto;
+}
+
+img.captcha {
+  border: 0;
+}
+
+.wpmtst-captcha {
+  margin-bottom: 1em;
+}
+
+/* category checklist */
+.strong-form ul.strong-category-list,
+.strong-form ul.strong-category-list ul.children {
+  list-style-type: none;
+}
+.strong-form ul.strong-category-list label,
+.strong-form ul.strong-category-list ul.children label {
+  font-weight: 400;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+.strong-form ul.strong-category-list {
+  margin: 0;
+  padding-left: 0;
+}
+.strong-form ul.strong-category-list ul.children {
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+/* The "wait" spinner on form submission.
+-----------------------------------------------*/
+.strong-form-wait {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.strong-form-wait .message {
+  position: absolute;
+  top: calc(50% - 25px);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #111;
+}
+
+.strong-form {
+  /* field-wrap is used for checkboxes, radios, star ratings */
+}
+.strong-form label {
+  font-weight: 700;
+}
+.strong-form .form-field .after {
+  font-size: 0.9em;
+  font-style: italic;
+}
+.strong-form input.error,
+.strong-form textarea.error,
+.strong-form select.error {
+  background: #f9e5e6;
+  border: 1px solid #e8aaad;
+  color: #b50007;
+}
+.strong-form span.error,
+.strong-form label.error {
+  color: #b50007;
+}
+.strong-form .field-wrap {
+  display: block;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+.strong-form .field-wrap.error {
+  border-radius: 3px;
+  background: #f9e5e6;
+  border: 1px solid #e8aaad;
+  color: #b50007;
+}
+.strong-form .field-wrap.error .checkbox-label {
+  outline: none;
+}
+.strong-form .field-wrap.error .strong-rating {
+  outline-color: #e8aaad;
+}
+.strong-form .field-wrap input + label + .required.symbol:after {
+  margin-left: 0;
+}
+
+/* Dark Theme
+-----------------------------------------------*/
+.strong-form.dark input.error,
+.strong-form.dark textarea.error,
+.strong-form.dark select.error {
+  border: 1px solid #ff6666;
+}
+.strong-form.dark .field-wrap.error {
+  border: 1px solid #ff6666;
+}
+.strong-form.dark .field-wrap.error .checkbox-label {
+  color: #111;
+}
+.strong-form.dark .field-wrap.error .strong-rating {
+  outline-color: #ff6666;
+}
+
+.order-form {
+  width: 100%;
+}
+
+.order-form .form-field input[type="text"] {
+  appearance: none;
+  min-width: 50px;
+  padding: 0 18px 0 18px;
+  margin: 2px 0;
+  height: 38px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  outline: none;
+  color: #bbbbbb;
+  font-style: italic;
+  display: flex;
+  transition: all 0.2s ease;
+  margin: 6px 0px;
+}
+.order-form .form-field input[type="text"]:focus {
+  border: 1px solid var(--orange-second-color);
+  color: var(--orange-second-color);
+}
+
+.order-form .form-field textarea {
+  appearance: none;
+  min-width: 50px;
+  padding: 26px;
+  margin: 2px 0;
+  max-width: 100%;
+  min-height: 160px;
+  border-radius: 40px 40px 40px 40px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  outline: none;
+  color: #bbbbbb;
+  font-style: italic;
+  display: flex;
+  transition: all 0.2s ease;
+  margin: 6px 0px;
+}
+.order-form .form-field textarea:focus {
+  border: 1px solid var(--orange-second-color);
+  color: var(--orange-second-color);
+}
+
+.order-form .strong-rating label:before {
+  color: var(--orange-second-color);
+}
+
+.order-form .field-rating {
+  margin: 8px 0px;
+}
+
+.order-form input[type="submit"] {
+  height: 35px;
+  font-size: 14px;
+  line-height: 35px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 0px 20px;
+  background: var(--orange-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.order-form input[type="submit"]:hover {
+  background: var(--orange-second-color);
+}
+
+.order-form .form-field .after {
+  margin-top: 8px;
+}
+.order-form input[type="file"] {
+  margin-top: 12px;
+}
+
+.testimonial-success {
+  width: 100%;
+}
+.testimonial-success p {
+  margin: 12px 8px;
+}

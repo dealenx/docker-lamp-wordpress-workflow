@@ -1,0 +1,29 @@
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $weight: normal,
+  $style: normal,
+  $asset-pipeline: false
+) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    /*font-display: auto;*/
+    font-display: swap;
+
+    @if $asset-pipeline == true {
+      src: local($font-family), font-url("#{$file-path}.eot");
+      src: local($font-family),
+        font-url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+        font-url("#{$file-path}.woff") format("woff"),
+        font-url("#{$file-path}.ttf") format("truetype");
+    } @else {
+      src: local($font-family), url("#{$file-path}.eot");
+      src: local($font-family),
+        url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+        url("#{$file-path}.woff") format("woff"),
+        url("#{$file-path}.ttf") format("truetype");
+    }
+  }
+}

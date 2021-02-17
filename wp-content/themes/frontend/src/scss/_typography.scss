@@ -1,0 +1,25 @@
+/*@include font-face("GothamPro", "../fonts/GothamPro/GothamPro");
+@include font-face("GothamPro", "../fonts/GothamPro/GothamPro-Bold", bold);
+@include font-face("GothamPro-Light", "../fonts/GothamPro/GothamPro-Light");
+@include font-face("GothamPro-Black", "../fonts/GothamPro/GothamPro-Black");*/
+
+// @include font-face("Lora", "../fonts/Lora-Regular/Lora-Regular");
+// @include font-face("Lora", "../fonts/Lora-Bold/Lora-Bold", bold);
+
+// %font-light {
+//   font-family: "Montserrat-Light";
+// }
+// %font-black {
+//   font-family: "Montserrat-Bold";
+// }
+
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Regular");
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", bold);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Black", 900);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", 700);
+@include font-face(
+  "Montserrat",
+  "../fonts/Montserrat/Montserrat-SemiBold",
+  600
+);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Medium", 500);

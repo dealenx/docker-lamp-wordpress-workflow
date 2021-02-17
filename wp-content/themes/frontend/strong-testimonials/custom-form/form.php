@@ -1,0 +1,37 @@
+<?php
+/**
+ * Template Name: Custom Form
+ * Description: The custom form template.
+ */
+?>
+<div class="strong-view strong-form order-form <?php wpmtst_container_class(); ?>"<?php wpmtst_container_data(); ?>>
+
+	<?php do_action( 'wpmtst_before_form' ); ?>
+
+	<div id="wpmtst-form">
+
+        <div class="strong-form-inner">
+
+            <?php wpmtst_field_required_notice(); ?>
+
+            <form <?php wpmtst_form_info(); ?>>
+
+                <?php wpmtst_form_setup(); ?>
+
+                <?php do_action( 'wpmtst_form_before_fields' ); ?>
+
+                <?php wpmtst_all_form_fields(); ?>
+
+                <?php do_action( 'wpmtst_form_after_fields' ); ?>
+
+                <?php wpmtst_form_submit_button(); ?>
+
+            </form>
+
+        </div>
+
+	</div>
+
+	<?php do_action( 'wpmtst_after_form' ); ?>
+
+</div>

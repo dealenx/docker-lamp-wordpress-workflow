@@ -1,0 +1,32 @@
+<svg id="编组_2" data-name="编组 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="209.978" height="195.504" viewBox="0 0 209.978 195.504">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M100.8,3.964V6.305a7.919,7.919,0,0,1-7.918,7.924H49.523l-.4-.01A7.921,7.921,0,0,1,41.6,6.305h0V3.962A3.962,3.962,0,0,0,37.638,0h0L0,0v43.58a7.924,7.924,0,0,0,7.924,7.924H134.9a7.924,7.924,0,0,0,7.924-7.924h0V0l-38.06,0A3.965,3.965,0,0,0,100.8,3.964Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_2-2" data-name="Clip 2" d="M0,23.771A20.359,20.359,0,0,0,4.566,36.439h0a1.992,1.992,0,0,1,.351,1.868h0l-2.652,7.9,8.609-3.187a1.967,1.967,0,0,1,1.658.147h0a34.858,34.858,0,0,0,17.183,4.376h0c16.41,0,29.714-10.642,29.714-23.771h0C59.428,10.642,46.124,0,29.714,0h0C13.3,0,0,10.642,0,23.771Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <ellipse id="椭圆形" cx="88.151" cy="17.828" rx="88.151" ry="17.828" transform="translate(0 159.847)" fill="#091034"/>
+  <path id="矩形" d="M28.163,0h86.5l28.163,33.874H0Z" transform="translate(16.838 96.854)" fill="#aeb8c3"/>
+  <rect id="矩形-2" data-name="矩形" width="99.046" height="106.97" rx="2" transform="translate(38.727 40.001)" fill="#f5f5f7"/>
+  <rect id="矩形-3" data-name="矩形" width="71.313" height="39.619" rx="2" transform="translate(52.495 51.887)" fill="rgba(10,20,70,0.88)"/>
+  <rect id="矩形备份" width="71.313" height="5.943" rx="1.711" transform="translate(52.495 103.267)" fill="rgba(10,20,70,0.88)"/>
+  <rect id="矩形备份_2" data-name="矩形备份 2" width="71.313" height="5.943" rx="1.711" transform="translate(52.495 119.662)" fill="rgba(10,20,70,0.88)"/>
+  <g id="编组" transform="translate(16.838 130.761)">
+    <path id="Clip_2-3" data-name="Clip 2" d="M100.8,3.964V6.305a7.919,7.919,0,0,1-7.918,7.924H49.523l-.4-.01A7.921,7.921,0,0,1,41.6,6.305h0V3.962A3.962,3.962,0,0,0,37.638,0h0L0,0v43.58a7.924,7.924,0,0,0,7.924,7.924H134.9a7.924,7.924,0,0,0,7.924-7.924h0V0l-38.06,0A3.965,3.965,0,0,0,100.8,3.964Z" transform="translate(0 0)" fill="none"/>
+    <g id="编组-2" data-name="编组" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Fill_1" data-name="Fill 1" d="M0,71.313H162.634V0H0Z" transform="translate(-9.905 -9.903)" fill="#dce0e8"/>
+    </g>
+  </g>
+  <g id="编组-3" data-name="编组" transform="translate(150.55)">
+    <path id="Clip_2-4" data-name="Clip 2" d="M0,23.771A20.359,20.359,0,0,0,4.566,36.439h0a1.992,1.992,0,0,1,.351,1.868h0l-2.652,7.9,8.609-3.187a1.967,1.967,0,0,1,1.658.147h0a34.858,34.858,0,0,0,17.183,4.376h0c16.41,0,29.714-10.642,29.714-23.771h0C59.428,10.642,46.124,0,29.714,0h0C13.3,0,0,10.642,0,23.771Z" fill="none"/>
+    <g id="编组-4" data-name="编组" clip-path="url(#clip-path-2)">
+      <path id="Fill_1-2" data-name="Fill 1" d="M0,67.352H79.237V0H0Z" transform="translate(-9.905 -9.905)" fill="#1890ff"/>
+      <rect id="矩形-4" data-name="矩形" width="8" height="8" transform="translate(-41.437 16)" fill="#fff"/>
+    </g>
+  </g>
+  <rect id="矩形-5" data-name="矩形" width="7.924" height="7.924" transform="translate(176.693 18.104)" fill="#fff"/>
+  <circle id="椭圆形-2" data-name="椭圆形" cx="3.962" cy="3.962" r="3.962" transform="translate(187.833 18.104)" fill="#fff"/>
+  <path id="三角形" d="M3.962,0,7.924,7.924H0Z" transform="translate(164.772 18.104)" fill="#fff"/>
+</svg>

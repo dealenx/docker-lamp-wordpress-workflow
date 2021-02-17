@@ -1,0 +1,43 @@
+$orange-color: #48c924;
+
+
+.cat-nav {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+.cat-nav > * {
+  margin-right: 12px;
+}
+.cat-nav .page-numbers.current {
+  cursor: default;
+  border: 1px solid $orange-color;
+  background-color: $orange-color;
+  color: #fff;
+  &:hover {
+    background-color: $orange-color;
+    border: 1px solid $orange-color;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.cat-nav .page-numbers.current:active {
+  top: 0px;
+}
+.cat-nav .page-numbers.dots {
+  border: 1px solid $orange-color;
+  background-color: rgba(0, 0, 0, 0);
+  color: $orange-color;
+}
+.cat-nav .page-numbers.dots:active {
+  top: 0px;
+}
+.cat-nav .page-numbers.dots:hover {
+  border: 1px solid $orange-color;
+  background-color: rgba(0, 0, 0, 0);
+  color: $orange-color;
+  text-decoration: none;
+}
+.cat-nav .page-numbers:active {
+  top: 1px;
+}

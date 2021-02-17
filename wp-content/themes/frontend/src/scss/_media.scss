@@ -1,0 +1,298 @@
+@media only screen and (max-width: 1200px) {
+  .wrap {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .check-your-return {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .header-top-rating {
+    .tops-blocks {
+      &.horizontal {
+        display: grid;
+        grid-gap: 0px 74px;
+        grid-template-columns: repeat(4, 1fr);
+        
+        .tops-block {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+      
+      
+    }
+  }
+  .top-nav-menu {
+    grid-area: top-nav-menu;
+
+    div[class^="menu-"],
+    div[class*=" menu-"] {
+      ul {
+        li {
+          margin: 0px 10px;
+          a {
+            font-size: 10px;
+            i {
+              margin: 0px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .casino-raing__blocks {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .casino-review-block {
+    grid-template-columns: 0.58fr 1fr;
+
+    &__preview-image {
+      background-position: center;
+
+      
+      
+    }
+  }
+  .header {
+    &__preview {
+      grid-column: span 8;
+    }
+    &__tops {
+      grid-column: span 4;
+    }
+  }
+
+  .header {
+    &__preview > img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  
+  .reviews-single {
+    &__bottom-article {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__share {
+        margin-top: 22px;
+      }
+    }
+
+  }
+  .reviews-single { 
+    &__main-side {
+      grid-column: span 12;
+    }
+  
+    &__right-side {
+      display: none;
+    }
+  }
+  .header-top-rating {
+    .tops-blocks {
+      &.horizontal {
+        display: grid;
+        grid-gap: 0px 74px;
+        grid-template-columns: repeat(3, 1fr);
+        
+        .tops-block {
+          &:nth-last-of-type(2) {
+            display: none;
+          }
+        }
+      }
+      
+      
+    }
+  }
+  .top-nav {
+    & > .wrap {
+      height: auto;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-areas: "top-nav-logo top-hamb";
+    }
+  }
+
+  .top-nav-contacts {
+    display: none;
+  }
+
+  .top-nav-menu {
+    display: none;
+  }
+
+  .top-hamb {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .top-dropdown-nav-menu {
+    .k-button i {
+      margin: 0px 8px 0px 0px;
+    }
+  }
+
+  .check-your-return {
+    & > .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__info {
+      padding-bottom: 0px;
+    }
+
+    &__check {
+      padding-top: 0px;
+    }
+  }
+
+  .casino-raing__blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .casino-review-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .casino-news {
+    &__blocks {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .header {
+    &__preview {
+      grid-column: span 7;
+    }
+    &__tops {
+      grid-column: span 5;
+    }
+  }
+
+  .footer {
+    & > .wrap {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    &__info {
+      padding-top: 36px;
+      padding-bottom: 24px;
+    }
+    &__contacts {
+      padding-top: 24px;
+    }
+  }
+
+  .casino-reviews {
+    &__area-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      margin-bottom: 8px;
+    }
+  }
+
+  .section-title {
+    & > .wrap {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+/* For web-site */
+@media only screen and (max-width: 576px) {
+  .it-does-not-show-on-mobile {
+    display: none;
+  }
+
+  .casino-raing__blocks {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    &__preview {
+      display: none;
+    }
+    &__tops {
+      grid-column: span 12;
+    }
+  }
+
+  .footer {
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > * {
+        margin: 8px 0px;
+      }
+    }
+  }
+  .section-title.big-indent {
+    margin-top: 40px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 576px) {
+  .it-shows-only-on-mobile {
+    display: none;
+  }
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .tabs-nav {
+    display: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}

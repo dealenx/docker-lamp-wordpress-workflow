@@ -1,0 +1,115 @@
+.post-content-main {
+  h2 {
+    margin: 16px 0px 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  p {
+    margin: 8px 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    min-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  figure {
+    width: 100%;
+    margin: 16px 0px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+  }
+
+  ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 32px;
+    margin-top: 16px;
+  }
+  ol li {
+    margin: 0 0 14px 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  ol li::before {
+    content: counter(my-awesome-counter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: linear-gradient(180deg, #64c455 0%, #409b31 100%);
+    border-radius: 4px;
+    color: #fff;
+    position: absolute;
+    --size: 24px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+
+    text-align: center;
+  }
+
+  ul {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 32px;
+    margin-top: 16px;
+  }
+  ul li {
+    margin: 0 0 14px 0;
+
+    position: relative;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  ul li::before {
+    content: "";
+
+    background: linear-gradient(180deg, #64c455 0%, #409b31 100%);
+    border-radius: 2px;
+    color: #fff;
+    position: absolute;
+    --size: 12px;
+    left: calc(-1 * var(--size) - 16px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 4px;
+
+    text-align: center;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 650px;
+    height: auto;
+  }
+}
