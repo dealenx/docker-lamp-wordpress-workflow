@@ -1,6 +1,6 @@
 {
   "name": "johnpbloch/wordpress",
-  "description": "WordPress is web software you can use to create a beautiful website or blog.",
+  "description": "WordPress is open source software you can use to create a beautiful website, blog, or app.",
   "keywords": [
     "wordpress",
     "blog",
@@ -23,8 +23,8 @@
     "source": "http://core.trac.wordpress.org/browser"
   },
   "require": {
-    "php": ">=5.3.2",
-    "johnpbloch/wordpress-core-installer": "^1.0",
-    "johnpbloch/wordpress-core": "4.9.5"
+    "php": ">=5.6.20",
+    "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
+    "johnpbloch/wordpress-core": "5.8.1"
   }
 }
