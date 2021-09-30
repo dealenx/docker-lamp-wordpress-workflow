@@ -9,8 +9,8 @@
     },
     "extra": {
         "installer-paths": {
-            "plugins/{$name}/": ["type:wordpress-plugin"],
-            "themes/{$name}/": ["type:wordpress-theme"]
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
         "wordpress-install-dir": "cms"
     },
