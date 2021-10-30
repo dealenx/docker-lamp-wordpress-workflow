@@ -4,6 +4,8 @@
 /docker/data/*
 /docker/logs/*
 
+vendor
+
 .DS_Store
 composer.lock
 
