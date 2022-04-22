@@ -10,25 +10,27 @@ services:
       - "${HOST_MACHINE_SECURE_HOST_PORT}:443"
     links:
       - mysql
+    # user: xfs
     volumes:
       - ${DOCUMENT_ROOT-./}:/var/www/html
       - ${PHP_INI-./docker/config/php/php.ini}:/usr/local/etc/php/php.ini
       - ${VHOSTS_DIR-./docker/config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./docker/logs/apache2}:/var/log/apache2
+    working_dir: /var/www/html/
 
-  wp-cli:
-    container_name: "${COMPOSE_PROJECT_NAME}-wp-cli"
+  node:
+    container_name: "${COMPOSE_PROJECT_NAME}-node"
     build:
-      context: ./docker/bin/wp-cli
-    image: wordpress:cli
-    container_name: wp-cli
-    environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: ${MYSQL_USER}
-      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
-      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+      context: ./docker/bin/node
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+
     volumes:
       - ${DOCUMENT_ROOT-./}:/var/www/html
+    working_dir: /var/www/html/wp-content/themes
+
+    entrypoint: ["tail", "-f", "/dev/null"]
 
   mysql:
     container_name: "${COMPOSE_PROJECT_NAME}-mysql"
@@ -62,6 +64,8 @@ services:
       - "8080:80"
     volumes:
       - /sessions
+    depends_on:
+      - mysql
 
   redis:
     container_name: "${COMPOSE_PROJECT_NAME}-redis"

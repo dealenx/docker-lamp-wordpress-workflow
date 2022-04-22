@@ -12,7 +12,7 @@ composer.lock
 cms
 env.php
 wp-content/advanced-cache.php
-wp-content/backup-db/
+# wp-content/backup-db/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
