@@ -5,7 +5,10 @@
         "johnpbloch/wordpress": "*"
     },
     "config": {
-        "vendor-dir": "vendor"
+        "vendor-dir": "vendor",
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true
+        }
     },
     "extra": {
         "installer-paths": {
